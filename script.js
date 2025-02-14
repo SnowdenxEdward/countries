@@ -65,7 +65,7 @@ clickbutton.addEventListener('click',()=>{
 
             userCountry.innerHTML = userInput.value.toUpperCase()
             img.src = data[0].flags.svg 
-            nativeName.innerHTML =  `<b>Native Name: </b> ${data[0].name.nativeName.eng.common }`      
+          nativeName.innerHTML = `<b>Native Name: </b> ${data[0].name.nativeName[Object.keys(data[0].name.nativeName)[0]].common}`;    
             population.innerHTML =`<b> Population: </b> ${data[0].population}` 
             region.innerHTML =`<b> Region: </b> ${data[0].region}`     
             subRegion.innerHTML =`<b> SubRegion: </b> ${data[0].subregion}` 
